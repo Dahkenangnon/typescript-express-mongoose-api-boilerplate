@@ -130,3 +130,5 @@ dist
 trash/*
 trash
 public/uploads/*
+.vscode/settings.json
+.DS_Store
