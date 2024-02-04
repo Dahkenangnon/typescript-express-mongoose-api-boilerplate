@@ -1,0 +1,10 @@
+{
+    "resetPassword": {
+      "subject": "Reinitialisation du mot de passe",
+      "body": "Bonjour,\n\nPour réinitialiser votre mot de passe, cliquez sur le lien suivant: {{resetPasswordUrl}}\n\nSi vous n'avez pas demandé de réinitialisation de mot de passe, ignorez ce message.\n\nCordialement,\n"
+    },
+    "verifyEmail": {
+      "subject": "Vérification de l'adresse email",
+      "body": "Cher utilisateur,\nPour vérifier votre adresse email, cliquez sur le lien suivant: {{verificationEmailUrl}}\nSi vous n'avez pas créé de compte, ignorez ce message.\n\nCordialement,\n"
+    }
+  } 

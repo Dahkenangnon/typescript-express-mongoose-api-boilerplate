@@ -1,0 +1,11 @@
+{
+    "resetPassword": {
+      "subject": "Reset Password",
+      "body": "Dear user,\nTo reset your password, click on this link: {{resetPasswordUrl}}\nIf you did not request any password resets, then ignore this email."
+    },
+    "verifyEmail": {
+      "subject": "Email Verification",
+      "body": "Dear user,\nTo verify your email, click on this link: {{verificationEmailUrl}}\nIf you did not create an account, then ignore this email."
+    }
+  }
+  

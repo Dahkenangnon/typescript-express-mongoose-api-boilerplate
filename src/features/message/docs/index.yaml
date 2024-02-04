@@ -1,0 +1,122 @@
+# Please see https://swagger.io/docs/specification/basic-structure/
+# To Customize your config file
+tags:
+- name: messages
+  description: messages API
+
+paths:
+# [GET] messages
+  /v1/messages:
+    get:
+      tags:
+      - messages
+      summary: Find All Messages
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] messages
+    post:
+      tags:
+      - messages
+      summary: Add Message
+      parameters:
+      - name: body
+        in: body
+        description: message Data
+        required: true
+        schema:
+          $ref: '#/definitions/v1/messages'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [GET] messages/id
+  /v1/messages/{id}:
+    get:
+      tags:
+      - messages
+      summary: Find Message By Id
+      parameters:
+      - name: id
+        in: path
+        description: Message Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [PUT] messages/id
+    put:
+      tags:
+      - messages
+      summary: Update Message By Id
+      parameters:
+      - name: id
+        in: path
+        description: message Id
+        required: true
+      - name: body
+        in: body
+        description: message Data
+        required: true
+        schema:
+          $ref: '#/definitions/v1/messages'
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [DELETE] messages/id
+    delete:
+      tags:
+      - messages
+      summary: Delete Message By Id
+      parameters:
+      - name: id
+        in: path
+        description: message Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# definitions
+definitions:
+  messages:
+    type: object
+    required:
+        - title
+        - content
+    properties:
+      title:
+        type: string
+        description: message title
+      password:
+        type: string
+        description: message content
+
+schemes:
+ - https
+ - http

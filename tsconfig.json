@@ -1,0 +1,105 @@
+{
+   "compileOnSave": false,
+   "compilerOptions": {
+      "target": "es2017",
+      "lib": [
+         "es2017",
+         "esnext.asynciterable"
+      ],
+      "noImplicitOverride": false,
+      "strict": true,
+      "alwaysStrict": false,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": false,
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "allowUnreachableCode": false,
+      "noFallthroughCasesInSwitch": true,
+      "typeRoots": [
+         "node_modules/@types"
+      ],
+      "types": [
+         "node",
+         "mocha",
+         "jest"
+      ],
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "pretty": true,
+      "sourceMap": false,
+      "declaration": false,
+      "outDir": "dist",
+      "allowJs": true,
+      "noEmit": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "baseUrl": "src",
+      "paths": {
+         "@/*": [
+            "*"
+         ],
+         "@config": [
+            "config"
+         ],
+         "@config/*": [
+            "config/*"
+         ],
+         "@controllers/*": [
+            "controllers/*"
+         ],
+         "@database": [
+            "database"
+         ],
+         "@databases": [
+            "databases"
+         ],
+         "@entities/*": [
+            "entities/*"
+         ],
+         "@exceptions/*": [
+            "exceptions/*"
+         ],
+         "@interfaces/*": [
+            "interfaces/*"
+         ],
+         "@middlewares/*": [
+            "middlewares/*"
+         ],
+         "@routes/*": [
+            "routes/*"
+         ],
+         "@services/*": [
+            "services/*"
+         ],
+         "@utils/*": [
+            "utils/*"
+         ],
+         "@features/*": [
+            "features/*"
+         ],
+         "@features": [
+            "features"
+         ],
+         "@crons": [
+            "crons"
+         ]
+      }
+   },
+   "include": [
+      "src/**/*.ts",
+      "src/**/*.json",
+      "test/**/*.ts"
+   ],
+   "exclude": [
+      "node_modules",
+      "logs"
+   ]
+}
