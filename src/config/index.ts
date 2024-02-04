@@ -31,8 +31,8 @@ export class Config {
   public port: number;
   /** Http Keep alive timeout */
   public keepAliveTimeout: number;
-  /** Http Domaine name */
-  public domaineName: string;
+  /** Http Domain name */
+  public domainName: string;
   /** Http Parameter limit */
   public parameterLimit: number;
   /** Http Request body size */
@@ -308,7 +308,7 @@ export class Config {
     this.isProduction = envVars.NODE_ENV === 'production';
     this.port = envVars.PORT;
     this.keepAliveTimeout = envVars.KEEP_ALIVE_TIMEOUT;
-    this.domaineName = envVars.DOMAIN_NAME;
+    this.domainName = envVars.DOMAIN_NAME;
     this.maximumRequestBodySize = envVars.MAXIMUM_REQUEST_BODY_SIZE;
     this.parameterLimit = envVars.PARAMETER_LIMIT;
     this.db = {
